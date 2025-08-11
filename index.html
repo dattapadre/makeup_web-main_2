@@ -168,7 +168,7 @@ src="https://www.facebook.com/tr?id=3682284201988791&amp;ev=PageView&amp;noscrip
                                                                                 <h2 class="color-pink">Beautiful Face</h2>
                                                                                 <h3 class="color-purple">Healthy You</h3>
                                                                                 <p class="color-black">Allow our team of beauty specialists to help you prepare for your wedding and enhance your special.</p>
-                                                                                <div class="sparsh_salon-btn-wraper"> <a href="index.html#aboutus"  class="sparsh_salon-btn xs-btn bg-color-pink round-btn box-shadow-btn">Home Services<span></span></a>  </div>
+                                                                                <div class="sparsh_salon-btn-wraper"> <button  class="sparsh_salon-btn xs-btn bg-color-pink round-btn box-shadow-btn border-none">Home Services<span></span></button>  </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -440,20 +440,39 @@ src="https://www.facebook.com/tr?id=3682284201988791&amp;ev=PageView&amp;noscrip
                         <div class="elementor-container elementor-column-gap-default">
                             <div class="elementor-row">
                                 <div data-id="4ca42b2" class="elementor-element elementor-element-4ca42b2 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
-                                    <div class="elementor-column-wrap elementor-element-populated">
+                                    <div  class="elementor-column-wrap elementor-element-populated"  >
                                         <div class="elementor-widget-wrap">
                                             <div data-id="cb7eb29" class="elementor-element elementor-element-cb7eb29 elementor-widget elementor-widget-xs-video" data-element_type="xs-video.default">
                                                 <div class="elementor-widget-container">
                                                     <div class="sparsh_salon-video-popup-content">
-                                                        <div class="sparsh_salon-video-popup-content-inner sparsh_salon-border sparsh_salon-version-2 sparsh_salon-border"> <img src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue294/Indian-Bridal_OI.jpg" alt="">
-                                               
+                                                       <div class="sparsh_salon-video-popup-content-inner sparsh_salon-border sparsh_salon-version-2 sparsh_salon-border"> 
+                                                          <video id="videoPlayer" autoplay muted src="wp-content/uploads/2025/v1.mp4"></video>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <style>
+                                .sparsh_salon-video-popup-content-inner video {
+                                 height: 500px; /* इथे तुला हव्या त्या उंचीचा नंबर दे */
+                                 width: auto;   /* प्रपोर्शन टिकवण्यासाठी */
+                                object-fit: cover; /* व्हिडिओ क्रॉप होऊ नये तर contain वापर */
+                                }
+                                
+                                </style>
+
+                                <script>
+                                  const video = document.getElementById("videoPlayer");
+                                   video.addEventListener("ended", function() {
+                                  video.src = "wp-content/uploads/2025/v2.mp4"; // दुसऱ्या व्हिडिओचा path
+                                  video.play(); // दुसरा व्हिडिओ प्ले कर
+                                  });
+                                  </script>
+
                                 <div data-id="66c236b" class="elementor-element elementor-element-66c236b elementor-column elementor-col-50 elementor-top-column mt-5" data-element_type="column">
                                     <div class="elementor-column-wrap elementor-element-populated">
                                         <div class="elementor-widget-wrap">
